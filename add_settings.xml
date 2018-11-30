@@ -1,0 +1,26 @@
+
+  <mirror>
+      <id>local_mirror</id>
+      <mirrorOf>*</mirrorOf>
+      <name>local_mirror</name>
+      <url>http://106.75.7.55:8081/nexus/content/groups/public/</url>
+  </mirror>
+
+  <profile>
+     <id>nexus</id>
+     <repositories>
+             <repository>
+              <id>thirdparty</id>
+              <url>http://106.75.7.55:8081/nexus/content/repositories/thirdparty/</url>
+      </repository>
+      <repository>
+              <id>local_nexus_releases</id>
+              <url>http://106.75.7.55:8081/nexus/content/repositories/releases/</url>
+      </repository>
+      <repository>
+              <id>local_nexus_snapshots</id>
+              <url>http://106.75.7.55:8081/nexus/content/repositories/snapshots/</url>
+      </repository>
+     </repositories>
+</profile>
+
